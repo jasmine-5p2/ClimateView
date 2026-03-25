@@ -1,0 +1,60 @@
+.InfoBox {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(10px);
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+/* 🌧 Rain */
+.InfoBox.rain {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+/* 🔥 Hot */
+.InfoBox.hot {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+/* ❄️ Cold */
+.InfoBox.cold {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* Default */
+.InfoBox.default {
+    background: linear-gradient(135deg, #434343, #000000);
+}
+.InfoBox:hover {
+    transform: scale(1.03);
+}
+
+.InfoBox h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.InfoBox h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.InfoBox p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+.InfoBox img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.InfoBox {
+    text-align: center;
+}
