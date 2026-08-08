@@ -35,6 +35,7 @@ export default function WeatherApp() {
     return (
         <div style={{ textAlign: "center" }}>
             <h2>ClimateView</h2>
+            <h3>{weatherInfo.city}, {weatherInfo.country}</h3>
             <SearchBox updateInfo={UpdateInfo} />
             <InfoBox info={weatherInfo} />
         </div>
